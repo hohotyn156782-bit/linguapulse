@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LinguaPulse — онлайн-школа иностранных языков. Английский, немецкий, французский, испанский, китайский, японский. Занятия с носителями языка.">
+    <meta name="keywords" content="онлайн школа, иностранные языки, английский онлайн, немецкий онлайн, репетитор, языковые курсы">
+    <meta property="og:title" content="LinguaPulse — Online Language School">
+    <meta property="og:description" content="Learn languages with native speakers. 6 languages, flexible schedule, proven methodology.">
+    <meta property="og:type" content="website">
+    <title>LinguaPulse — Online Language School</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <color-scheme content="only light">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="container header__inner">
+            <a href="#" class="logo">
+                <span class="logo__icon">LP</span>
+                <span class="logo__text">LinguaPulse</span>
+            </a>
+            <nav class="nav" id="nav">
+                <a href="#languages" class="nav__link" data-i18n="nav_languages">Языки</a>
+                <a href="#how" class="nav__link" data-i18n="nav_how">Как это работает</a>
+                <a href="#courses" class="nav__link" data-i18n="nav_courses">Курсы</a>
+                <a href="#teachers" class="nav__link" data-i18n="nav_teachers">Преподаватели</a>
+                <a href="#reviews" class="nav__link" data-i18n="nav_reviews">Отзывы</a>
+                <a href="#faq" class="nav__link" data-i18n="nav_faq">FAQ</a>
+            </nav>
+            <div class="header__right">
+                <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
+                <a href="#trial" class="btn btn--small btn--accent" data-i18n="nav_trial">Пробный урок</a>
+                <button class="burger" id="burger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero__bg">
+            <div class="hero__orb hero__orb--1"></div>
+            <div class="hero__orb hero__orb--2"></div>
+            <div class="hero__orb hero__orb--3"></div>
+        </div>
+        <div class="container hero__inner">
+            <div class="hero__content">
+                <div class="hero__badge" data-i18n="hero_badge">Онлайн-школа языков</div>
+                <h1 class="hero__title">
+                    <span data-i18n="hero_title1">Заговори на</span>
+                    <span class="hero__title-gradient" id="heroLang">English</span>
+                    <span data-i18n="hero_title2">уверенно</span>
+                </h1>
+                <p class="hero__subtitle" data-i18n="hero_subtitle">6 языков, живые уроки с носителями, гибкое расписание. Первый результат — через 2 недели.</p>
+                <div class="hero__actions">
+                    <a href="#trial" class="btn btn--primary btn--large" data-i18n="hero_cta">Записаться на пробный урок</a>
+                    <a href="#courses" class="btn btn--outline btn--large" data-i18n="hero_cta2">Смотреть курсы</a>
+                </div>
+                <div class="hero__trust">
+                    <div class="hero__avatars">
+                        <div class="hero__avatar" style="background: #7c3aed;">A</div>
+                        <div class="hero__avatar" style="background: #f97316;">M</div>
+                        <div class="hero__avatar" style="background: #06b6d4;">K</div>
+                        <div class="hero__avatar" style="background: #ec4899;">D</div>
+                        <div class="hero__avatar" style="background: #10b981;">S</div>
+                    </div>
+                    <span class="hero__trust-text" data-i18n="hero_trust">2,500+ студентов уже учатся с нами</span>
+                </div>
+            </div>
+            <div class="hero__visual">
+                <div class="hero__card hero__card--main">
+                    <div class="hero__card-emoji">🎧</div>
+                    <div class="hero__card-label" data-i18n="hero_card1">Живые уроки</div>
+                </div>
+                <div class="hero__card hero__card--float1">
+                    <div class="hero__card-emoji">🌍</div>
+                    <div class="hero__card-label" data-i18n="hero_card2">6 языков</div>
+                </div>
+                <div class="hero__card hero__card--float2">
+                    <div class="hero__card-emoji">📱</div>
+                    <div class="hero__card-label" data-i18n="hero_card3">Откуда угодно</div>
+                </div>
+                <div class="hero__card hero__card--float3">
+                    <div class="hero__card-emoji">🏆</div>
+                    <div class="hero__card-label" data-i18n="hero_card4">Сертификат</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+        <div class="container stats__inner">
+            <div class="stat" data-target="2500">
+                <span class="stat__number">0</span>
+                <span class="stat__label" data-i18n="stat1">Студентов</span>
+            </div>
+            <div class="stat" data-target="48">
+                <span class="stat__number">0</span>
+                <span class="stat__label" data-i18n="stat2">Преподавателей</span>
+            </div>
+            <div class="stat" data-target="6">
+                <span class="stat__number">0</span>
+                <span class="stat__label" data-i18n="stat3">Языков</span>
+            </div>
+            <div class="stat" data-target="98">
+                <span class="stat__number">0</span>
+                <span class="stat__suffix">%</span>
+                <span class="stat__label" data-i18n="stat4">Довольных студентов</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- LANGUAGES -->
+    <section class="languages" id="languages">
+        <div class="container">
+            <h2 class="section-title" data-i18n="lang_title">Выберите свой язык</h2>
+            <p class="section-subtitle" data-i18n="lang_subtitle">Мы преподаём 6 самых востребованных языков мира</p>
+            <div class="languages__grid">
+                <div class="lang-card" data-color="#3b82f6">
+                    <div class="lang-card__flag">🇬🇧</div>
+                    <h3 class="lang-card__name" data-i18n="lang_en">Английский</h3>
+                    <p class="lang-card__desc" data-i18n="lang_en_desc">Международный язык бизнеса и технологий</p>
+                    <span class="lang-card__levels" data-i18n="lang_levels">A1 — C2</span>
+                </div>
+                <div class="lang-card" data-color="#ef4444">
+                    <div class="lang-card__flag">🇩🇪</div>
+                    <h3 class="lang-card__name" data-i18n="lang_de">Немецкий</h3>
+                    <p class="lang-card__desc" data-i18n="lang_de_desc">Язык инженерии, науки и культуры</p>
+                    <span class="lang-card__levels" data-i18n="lang_levels">A1 — C2</span>
+                </div>
+                <div class="lang-card" data-color="#8b5cf6">
+                    <div class="lang-card__flag">🇫🇷</div>
+                    <h3 class="lang-card__name" data-i18n="lang_fr">Французский</h3>
+                    <p class="lang-card__desc" data-i18n="lang_fr_desc">Язык дипломатии, моды и искусства</p>
+                    <span class="lang-card__levels" data-i18n="lang_levels">A1 — C2</span>
+                </div>
+                <div class="lang-card" data-color="#f97316">
+                    <div class="lang-card__flag">🇪🇸</div>
+                    <h3 class="lang-card__name" data-i18n="lang_es">Испанский</h3>
+                    <p class="lang-card__desc" data-i18n="lang_es_desc">Второй по распространённости язык мира</p>
+                    <span class="lang-card__levels" data-i18n="lang_levels">A1 — C2</span>
+                </div>
+                <div class="lang-card" data-color="#ec4899">
+                    <div class="lang-card__flag">🇨🇳</div>
+                    <h3 class="lang-card__name" data-i18n="lang_zh">Китайский</h3>
+                    <p class="lang-card__desc" data-i18n="lang_zh_desc">Язык крупнейшей экономики будущего</p>
+                    <span class="lang-card__levels" data-i18n="lang_levels_zh">HSK 1 — HSK 6</span>
+                </div>
+                <div class="lang-card" data-color="#06b6d4">
+                    <div class="lang-card__flag">🇯🇵</div>
+                    <h3 class="lang-card__name" data-i18n="lang_ja">Японский</h3>
+                    <p class="lang-card__desc" data-i18n="lang_ja_desc">Язык технологий, аниме и уникальной культуры</p>
+                    <span class="lang-card__levels" data-i18n="lang_levels_ja">N5 — N1</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how" id="how">
+        <div class="container">
+            <h2 class="section-title" data-i18n="how_title">Как это работает</h2>
+            <p class="section-subtitle" data-i18n="how_subtitle">4 простых шага к свободному владению языком</p>
+            <div class="how__steps">
+                <div class="how__step">
+                    <div class="how__step-number">01</div>
+                    <div class="how__step-icon">📝</div>
+                    <h3 data-i18n="how_step1_title">Запишитесь</h3>
+                    <p data-i18n="how_step1_desc">Оставьте заявку на бесплатный пробный урок. Мы свяжемся с вами в течение часа.</p>
+                </div>
+                <div class="how__connector"></div>
+                <div class="how__step">
+                    <div class="how__step-number">02</div>
+                    <div class="how__step-icon">🎯</div>
+                    <h3 data-i18n="how_step2_title">Определим уровень</h3>
+                    <p data-i18n="how_step2_desc">На пробном уроке преподаватель определит ваш уровень и составит персональный план.</p>
+                </div>
+                <div class="how__connector"></div>
+                <div class="how__step">
+                    <div class="how__step-number">03</div>
+                    <div class="how__step-icon">💬</div>
+                    <h3 data-i18n="how_step3_title">Занимайтесь</h3>
+                    <p data-i18n="how_step3_desc">Живые уроки по видеосвязи с носителем языка. Гибкий график — вы выбираете время.</p>
+                </div>
+                <div class="how__connector"></div>
+                <div class="how__step">
+                    <div class="how__step-number">04</div>
+                    <div class="how__step-icon">🏆</div>
+                    <h3 data-i18n="how_step4_title">Получите результат</h3>
+                    <p data-i18n="how_step4_desc">Сдайте финальный тест и получите сертификат. Средний срок до первых результатов — 2 недели.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COURSES -->
+    <section class="courses" id="courses">
+        <div class="container">
+            <h2 class="section-title" data-i18n="courses_title">Наши курсы</h2>
+            <p class="section-subtitle" data-i18n="courses_subtitle">Выберите формат, который подходит именно вам</p>
+            <div class="courses__grid">
+                <div class="course-card">
+                    <div class="course-card__badge" data-i18n="course_popular">Популярный</div>
+                    <div class="course-card__icon">👤</div>
+                    <h3 class="course-card__name" data-i18n="course1_name">Индивидуальный</h3>
+                    <p class="course-card__desc" data-i18n="course1_desc">Персональные занятия 1-на-1 с преподавателем. Максимум внимания и гибкий график.</p>
+                    <ul class="course-card__features">
+                        <li data-i18n="course1_f1">60 минут урок</li>
+                        <li data-i18n="course1_f2">Персональная программа</li>
+                        <li data-i18n="course1_f3">Гибкое расписание</li>
+                        <li data-i18n="course1_f4">Домашние задания</li>
+                    </ul>
+                    <div class="course-card__price">
+                        <span class="course-card__amount">1 200 ₽</span>
+                        <span class="course-card__per" data-i18n="course_per">/ урок</span>
+                    </div>
+                    <a href="#trial" class="btn btn--primary" data-i18n="course_cta">Начать обучение</a>
+                </div>
+                <div class="course-card course-card--featured">
+                    <div class="course-card__badge" data-i18n="course_best">Лучший выбор</div>
+                    <div class="course-card__icon">👥</div>
+                    <h3 class="course-card__name" data-i18n="course2_name">Мини-группа</h3>
+                    <p class="course-card__desc" data-i18n="course2_desc">Группы по 3-5 человек. Баланс внимания преподавателя и разговорной практики.</p>
+                    <ul class="course-card__features">
+                        <li data-i18n="course2_f1">90 минут урок</li>
+                        <li data-i18n="course2_f2">3-5 человек в группе</li>
+                        <li data-i18n="course2_f3">Разговорный клуб</li>
+                        <li data-i18n="course2_f4">Материалы включены</li>
+                    </ul>
+                    <div class="course-card__price">
+                        <span class="course-card__amount">700 ₽</span>
+                        <span class="course-card__per" data-i18n="course_per">/ урок</span>
+                    </div>
+                    <a href="#trial" class="btn btn--accent" data-i18n="course_cta">Начать обучение</a>
+                </div>
+                <div class="course-card">
+                    <div class="course-card__badge" data-i18n="course_intensive">Интенсив</div>
+                    <div class="course-card__icon">🚀</div>
+                    <h3 class="course-card__name" data-i18n="course3_name">Интенсивный</h3>
+                    <p class="course-card__desc" data-i18n="course3_desc">5 занятий в неделю для тех, кто хочет быстрый результат. Уровень за 2 месяца.</p>
+                    <ul class="course-card__features">
+                        <li data-i18n="course3_f1">60 минут урок</li>
+                        <li data-i18n="course3_f2">5 раз в неделю</li>
+                        <li data-i18n="course3_f3">Ежедневные задания</li>
+                        <li data-i18n="course3_f4">Прогресс-трекер</li>
+                    </ul>
+                    <div class="course-card__price">
+                        <span class="course-card__amount">900 ₽</span>
+                        <span class="course-card__per" data-i18n="course_per">/ урок</span>
+                    </div>
+                    <a href="#trial" class="btn btn--primary" data-i18n="course_cta">Начать обучение</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEACHERS -->
+    <section class="teachers" id="teachers">
+        <div class="container">
+            <h2 class="section-title" data-i18n="teachers_title">Наши преподаватели</h2>
+            <p class="section-subtitle" data-i18n="teachers_subtitle">Носители языка с педагогическим образованием и опытом от 5 лет</p>
+            <div class="teachers__grid">
+                <div class="teacher-card">
+                    <div class="teacher-card__avatar" style="background: linear-gradient(135deg, #7c3aed, #3b82f6);">
+                        <span>SC</span>
+                    </div>
+                    <h3 class="teacher-card__name">Sarah Collins</h3>
+                    <span class="teacher-card__flag">🇬🇧</span>
+                    <p class="teacher-card__lang" data-i18n="teacher1_lang">Английский</p>
+                    <p class="teacher-card__exp" data-i18n="teacher1_exp">8 лет опыта • CELTA</p>
+                    <p class="teacher-card__desc" data-i18n="teacher1_desc">Специалист по бизнес-английскому и подготовке к IELTS. Работала в Лондоне и Сингапуре.</p>
+                </div>
+                <div class="teacher-card">
+                    <div class="teacher-card__avatar" style="background: linear-gradient(135deg, #ef4444, #f97316);">
+                        <span>MK</span>
+                    </div>
+                    <h3 class="teacher-card__name">Markus Klein</h3>
+                    <span class="teacher-card__flag">🇩🇪</span>
+                    <p class="teacher-card__lang" data-i18n="teacher2_lang">Немецкий</p>
+                    <p class="teacher-card__exp" data-i18n="teacher2_exp">12 лет опыта • Goethe-Institut</p>
+                    <p class="teacher-card__desc" data-i18n="teacher2_desc">Преподавал в университетах Мюнхена. Автор методики быстрого освоения немецкой грамматики.</p>
+                </div>
+                <div class="teacher-card">
+                    <div class="teacher-card__avatar" style="background: linear-gradient(135deg, #8b5cf6, #ec4899);">
+                        <span>CD</span>
+                    </div>
+                    <h3 class="teacher-card__name">Claire Dubois</h3>
+                    <span class="teacher-card__flag">🇫🇷</span>
+                    <p class="teacher-card__lang" data-i18n="teacher3_lang">Французский</p>
+                    <p class="teacher-card__exp" data-i18n="teacher3_exp">6 лет опыта • DALF C2</p>
+                    <p class="teacher-card__desc" data-i18n="teacher3_desc">Родом из Парижа. Делает уроки живыми — через кино, музыку и современную культуру.</p>
+                </div>
+                <div class="teacher-card">
+                    <div class="teacher-card__avatar" style="background: linear-gradient(135deg, #06b6d4, #10b981);">
+                        <span>YT</span>
+                    </div>
+                    <h3 class="teacher-card__name">Yuki Tanaka</h3>
+                    <span class="teacher-card__flag">🇯🇵</span>
+                    <p class="teacher-card__lang" data-i18n="teacher4_lang">Японский</p>
+                    <p class="teacher-card__exp" data-i18n="teacher4_exp">7 лет опыта • JLPT N1</p>
+                    <p class="teacher-card__desc" data-i18n="teacher4_desc">Из Токио. Обучает через аниме, мангу и реальные ситуации. Популярна среди студентов.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <h2 class="section-title" data-i18n="reviews_title">Отзывы студентов</h2>
+            <p class="section-subtitle" data-i18n="reviews_subtitle">Что говорят те, кто уже учится в LinguaPulse</p>
+            <div class="reviews__slider">
+                <div class="reviews__track" id="reviewsTrack">
+                    <div class="review-card">
+                        <div class="review-card__stars">★★★★★</div>
+                        <p class="review-card__text" data-i18n="review1_text">«За 3 месяца подняла английский с B1 до B2. Преподаватель Sarah — просто огонь! Уроки пролетают незаметно.»</p>
+                        <div class="review-card__author">
+                            <div class="review-card__avatar" style="background: #7c3aed;">А</div>
+                            <div>
+                                <strong data-i18n="review1_name">Анна М.</strong>
+                                <span data-i18n="review1_course">Английский, B1→B2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-card__stars">★★★★★</div>
+                        <p class="review-card__text" data-i18n="review2_text">«Начал учить японский с нуля, думал будет невозможно. Через полгода уже смотрю аниме без субтитров. Юки-сенсей — лучшая!»</p>
+                        <div class="review-card__author">
+                            <div class="review-card__avatar" style="background: #06b6d4;">Д</div>
+                            <div>
+                                <strong data-i18n="review2_name">Дмитрий К.</strong>
+                                <span data-i18n="review2_course">Японский, N5→N3</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-card__stars">★★★★★</div>
+                        <p class="review-card__text" data-i18n="review3_text">«Мини-группа — идеальный формат. И дешевле, и разговорной практики больше. Немецкий перестал казаться сложным!»</p>
+                        <div class="review-card__author">
+                            <div class="review-card__avatar" style="background: #ef4444;">М</div>
+                            <div>
+                                <strong data-i18n="review3_name">Мария С.</strong>
+                                <span data-i18n="review3_course">Немецкий, A2→B1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-card__stars">★★★★★</div>
+                        <p class="review-card__text" data-i18n="review4_text">«Интенсивный курс — то, что нужно перед переездом. За 2 месяца выучил испанский до уровня уверенного общения.»</p>
+                        <div class="review-card__author">
+                            <div class="review-card__avatar" style="background: #f97316;">И</div>
+                            <div>
+                                <strong data-i18n="review4_name">Игорь Л.</strong>
+                                <span data-i18n="review4_course">Испанский, A1→B1</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews__controls">
+                    <button class="reviews__btn reviews__btn--prev" id="reviewPrev" aria-label="Previous">&#8592;</button>
+                    <button class="reviews__btn reviews__btn--next" id="reviewNext" aria-label="Next">&#8594;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title" data-i18n="faq_title">Частые вопросы</h2>
+            <p class="section-subtitle" data-i18n="faq_subtitle">Ответы на самые популярные вопросы наших студентов</p>
+            <div class="faq__list">
+                <div class="faq__item">
+                    <button class="faq__question" data-i18n="faq1_q">Как проходят занятия?</button>
+                    <div class="faq__answer">
+                        <p data-i18n="faq1_a">Занятия проходят онлайн по видеосвязи (Zoom или Google Meet). Вам нужен только компьютер или планшет с камерой и микрофоном. Все материалы предоставляются в электронном виде.</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button class="faq__question" data-i18n="faq2_q">Можно ли перенести урок?</button>
+                    <div class="faq__answer">
+                        <p data-i18n="faq2_a">Да, урок можно перенести бесплатно, если предупредить за 4 часа до начала. Мы понимаем, что планы меняются, и стараемся быть гибкими.</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button class="faq__question" data-i18n="faq3_q">У меня нулевой уровень — это нормально?</button>
+                    <div class="faq__answer">
+                        <p data-i18n="faq3_a">Абсолютно! Большинство наших студентов начинают с нуля. Наши преподаватели владеют русским языком и помогут вам комфортно начать обучение.</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button class="faq__question" data-i18n="faq4_q">Какой сертификат я получу?</button>
+                    <div class="faq__answer">
+                        <p data-i18n="faq4_a">По окончании курса вы получите сертификат LinguaPulse с указанием достигнутого уровня. Также мы помогаем подготовиться к международным экзаменам (IELTS, DELF, Goethe-Zertifikat и др.).</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button class="faq__question" data-i18n="faq5_q">Есть ли скидки на пакеты уроков?</button>
+                    <div class="faq__answer">
+                        <p data-i18n="faq5_a">Да! При покупке пакета от 10 уроков — скидка 10%, от 20 уроков — 15%, от 40 уроков — 20%. Также действуют семейные скидки и скидки для студентов.</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button class="faq__question" data-i18n="faq6_q">Как оплатить обучение?</button>
+                    <div class="faq__answer">
+                        <p data-i18n="faq6_a">Принимаем банковские карты, электронные кошельки и банковские переводы. Оплата помесячная или за пакет уроков — как вам удобнее.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRIAL FORM -->
+    <section class="trial" id="trial">
+        <div class="container">
+            <div class="trial__inner">
+                <div class="trial__content">
+                    <h2 class="trial__title" data-i18n="trial_title">Запишитесь на бесплатный пробный урок</h2>
+                    <p class="trial__desc" data-i18n="trial_desc">30 минут, которые изменят ваш подход к изучению языков. Без обязательств — просто попробуйте.</p>
+                    <ul class="trial__benefits">
+                        <li data-i18n="trial_b1">Определим ваш текущий уровень</li>
+                        <li data-i18n="trial_b2">Составим персональный план обучения</li>
+                        <li data-i18n="trial_b3">Познакомитесь с преподавателем</li>
+                        <li data-i18n="trial_b4">Получите рекомендации по формату</li>
+                    </ul>
+                </div>
+                <form class="trial__form" id="trialForm">
+                    <div class="form-group">
+                        <label data-i18n="form_name">Ваше имя</label>
+                        <input type="text" name="name" required placeholder="Александр">
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="form_email">Email</label>
+                        <input type="email" name="email" required placeholder="alex@mail.ru">
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="form_phone">Телефон</label>
+                        <input type="tel" name="phone" required placeholder="+7 (999) 123-45-67">
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="form_language">Какой язык хотите изучать?</label>
+                        <select name="language" required>
+                            <option value="" data-i18n="form_select">Выберите язык</option>
+                            <option value="english" data-i18n="lang_en">Английский</option>
+                            <option value="german" data-i18n="lang_de">Немецкий</option>
+                            <option value="french" data-i18n="lang_fr">Французский</option>
+                            <option value="spanish" data-i18n="lang_es">Испанский</option>
+                            <option value="chinese" data-i18n="lang_zh">Китайский</option>
+                            <option value="japanese" data-i18n="lang_ja">Японский</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn--accent btn--large btn--full" data-i18n="form_submit">Записаться бесплатно</button>
+                    <p class="trial__note" data-i18n="form_note">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a href="#" class="logo">
+                        <span class="logo__icon">LP</span>
+                        <span class="logo__text">LinguaPulse</span>
+                    </a>
+                    <p class="footer__tagline" data-i18n="footer_tagline">Онлайн-школа иностранных языков. Учитесь у лучших преподавателей мира.</p>
+                </div>
+                <div class="footer__links">
+                    <h4 data-i18n="footer_nav">Навигация</h4>
+                    <a href="#languages" data-i18n="nav_languages">Языки</a>
+                    <a href="#courses" data-i18n="nav_courses">Курсы</a>
+                    <a href="#teachers" data-i18n="nav_teachers">Преподаватели</a>
+                    <a href="#faq" data-i18n="nav_faq">FAQ</a>
+                </div>
+                <div class="footer__links">
+                    <h4 data-i18n="footer_contacts">Контакты</h4>
+                    <a href="mailto:hello@linguapulse.com">hello@linguapulse.com</a>
+                    <a href="tel:+78001234567">+7 (800) 123-45-67</a>
+                    <div class="footer__socials">
+                        <a href="#" aria-label="Telegram" class="footer__social">TG</a>
+                        <a href="#" aria-label="WhatsApp" class="footer__social">WA</a>
+                        <a href="#" aria-label="Instagram" class="footer__social">IG</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 LinguaPulse. <span data-i18n="footer_rights">Все права защищены.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
